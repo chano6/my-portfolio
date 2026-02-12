@@ -12,6 +12,9 @@ const config: Config = {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      fontFamily: {
+        code: ["var(--font-ubuntu-mono)", "monospace"],
+      },
     },
   },
   plugins: [],
