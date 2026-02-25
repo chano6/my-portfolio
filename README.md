@@ -17,7 +17,7 @@ Next.js(App Router) + TypeScript + Tailwind CSS 기반 개인 포트폴리오입
 ## Features
 
 - 섹션 기반 단일 페이지 구성
-- 타이핑 애니메이션 Hero 섹션
+- 타이핑 애니메이션 Intro 섹션
 - 공통 Header/Footer 레이아웃
 - 반응형 UI
 

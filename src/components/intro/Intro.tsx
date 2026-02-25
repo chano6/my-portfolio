@@ -7,7 +7,7 @@ const CODE_TEXT = `function Portfolio() {
   return "Welcome!"
 }`;
 
-export default function Hero() {
+export default function Intro() {
   const [isTypingDone, setIsTypingDone] = useState(false);
 
   const handleTypingComplete = () => {
