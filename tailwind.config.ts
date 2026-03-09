@@ -9,11 +9,14 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
-      },
-      fontFamily: {
-        code: ["var(--font-ubuntu-mono)", "monospace"],
+        brown: {
+          intro: "#7B542F",
+          primary: "#9C6A3D",
+          accent: "#E6C6A5",
+          light: "#FFF7ED",
+          border: "#EADBC8",
+          text: "#2B2B2B",
+        },
       },
     },
   },
