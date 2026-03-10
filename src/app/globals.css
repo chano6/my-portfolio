@@ -20,8 +20,107 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+@layer components {
+  .intro-title {
+    text-align: center;
+    color: transparent;
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+    font-weight: 700;
+    font-size: clamp(2rem, 11vw, 5rem);
+    line-height: 0;
+
+    --intro-width: 4.3em;
+    --intro-shift-mid: 9em;
+    --intro-shift-end: 15em;
+    --intro-scale-mid: 3;
+    --intro-line-thickness: 0.07em;
+
+    background: linear-gradient(
+      90deg,
+      #e6c6a5 47%,
+      #e6c6a5 49%,
+      #e6c6a5 50%,
+      #fff 50%,
+      #fff 100%
+    );
+    background-size: 300% 100%;
+    background-position: right;
+    -webkit-background-clip: text;
+    background-clip: text;
+    animation: into 4s forwards;
+  }
+
+  .intro-title::before,
+  .intro-title::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: var(--intro-line-thickness);
+    background: #fff;
+    animation: into2 4s forwards;
+  }
+}
+
+@keyframes into {
+  0% {
+    width: 0;
+  }
+  7% {
+    width: var(--intro-width);
+    transform: skewY(0deg);
+  }
+  15% {
+    line-height: 0;
+    background-position: right;
+    transform: skewY(-10deg);
+  }
+  25% {
+    width: var(--intro-width);
+    line-height: 1;
+    transform: skewY(-10deg) translate(0);
+  }
+  85% {
+    width: var(--intro-width);
+    line-height: 1;
+    transform: skewY(-10deg) translate(0);
+  }
+  90% {
+    line-height: 0;
+    transform: skewY(-10deg) translate(0) scaleX(1);
+  }
+  95% {
+    transform: skewY(-10deg) translate(var(--intro-shift-mid))
+      scaleX(var(--intro-scale-mid));
+  }
+  100% {
+    background-position: left;
+    transform: skewY(-10deg) translate(var(--intro-shift-end)) scaleX(1);
+  }
+}
+
+@keyframes into2 {
+  12% {
+    height: var(--intro-line-thickness);
+  }
+  15% {
+    height: calc(var(--intro-line-thickness) * 2);
+  }
+  85% {
+    height: calc(var(--intro-line-thickness) * 2);
+  }
+  90% {
+    height: var(--intro-line-thickness);
+  }
+}
+
+@media (max-width: 640px) {
+  .intro-title {
+    font-size: clamp(2rem, 12vw, 3.2rem);
+    --intro-width: 4.8em;
+    --intro-shift-mid: 5.5em;
+    --intro-shift-end: 8em;
+    --intro-scale-mid: 2.1;
+    --intro-line-thickness: 0.05em;
   }
 }
