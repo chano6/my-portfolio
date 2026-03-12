@@ -3,20 +3,21 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --color-blue-dark: #1d4cc2;
+  --color-blue-primary: #2f6bff;
+  --color-blue-hover: #255ae0;
+  --color-blue-accent: #5bc0ff;
+  --color-blue-light: #eaf1ff;
+  --color-blue-background: #f8faff;
+  --color-blue-surface: #f1f5ff;
+  --color-blue-border: #d9e2f3;
+  --color-blue-text: #111827;
+  --color-blue-muted: #4b5563;
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
+  color: var(--color-blue-text);
+  background: var(--color-blue-background);
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -38,11 +39,11 @@ body {
 
     background: linear-gradient(
       90deg,
-      #e6c6a5 47%,
-      #e6c6a5 49%,
-      #e6c6a5 50%,
-      #fff 50%,
-      #fff 100%
+      var(--color-blue-primary) 47%,
+      var(--color-blue-primary) 49%,
+      var(--color-blue-primary) 50%,
+      var(--color-blue-background) 50%,
+      var(--color-blue-background) 100%
     );
     background-size: 300% 100%;
     background-position: right;
@@ -57,7 +58,7 @@ body {
     display: block;
     width: 100%;
     height: var(--intro-line-thickness);
-    background: #fff;
+    background: var(--color-blue-primary);
     animation: into2 4s forwards;
   }
 }

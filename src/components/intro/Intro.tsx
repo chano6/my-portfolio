@@ -17,8 +17,8 @@ export default function Intro({ onComplete, durationMs = 4000 }: IntroProps) {
   }, [durationMs, onComplete]);
 
   return (
-    <section className="flex w-full h-screen items-center justify-center bg-brown-dark">
-      <h1 className="intro-title">Hello, World</h1>
+    <section className="flex w-full h-screen items-center justify-center bg-blue-background">
+      <h1 className="intro-title ">Hello, World</h1>
     </section>
   );
 }

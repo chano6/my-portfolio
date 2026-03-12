@@ -9,13 +9,17 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        brown: {
-          dark: "#4B352A",
-          primary: "#9C6A3D",
-          accent: "#E6C6A5",
-          light: "#FFF7ED",
-          border: "#EADBC8",
-          text: "#2B2B2B",
+        blue: {
+          dark: "var(--color-blue-dark)",
+          primary: "var(--color-blue-primary)",
+          hover: "var(--color-blue-hover)",
+          accent: "var(--color-blue-accent)",
+          light: "var(--color-blue-light)",
+          background: "var(--color-blue-background)",
+          surface: "var(--color-blue-surface)",
+          border: "var(--color-blue-border)",
+          text: "var(--color-blue-text)",
+          muted: "var(--color-blue-muted)",
         },
       },
     },
