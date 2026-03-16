@@ -9,6 +9,10 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
+        text: {
+          primary: "var(--color-text-primary)",
+          muted: "var(--color-text-muted)",
+        },
         blue: {
           dark: "var(--color-blue-dark)",
           primary: "var(--color-blue-primary)",
@@ -18,9 +22,11 @@ const config: Config = {
           background: "var(--color-blue-background)",
           surface: "var(--color-blue-surface)",
           border: "var(--color-blue-border)",
-          text: "var(--color-blue-text)",
-          muted: "var(--color-blue-muted)",
         },
+      },
+      fontFamily: {
+        logo: ["var(--font-logo)", "sans-serif"],
+        nav: ["var(--font-nav)", "sans-serif"],
       },
     },
   },

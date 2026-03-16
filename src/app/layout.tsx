@@ -1,11 +1,17 @@
 import type { Metadata } from "next";
-import { Ubuntu_Mono } from "next/font/google";
+import { Cherry_Bomb_One, IBM_Plex_Sans } from "next/font/google";
 import "./globals.css";
 
-const ubuntuMono = Ubuntu_Mono({
+const cherryBombOne = Cherry_Bomb_One({
   subsets: ["latin"],
-  weight: ["400", "700"],
-  variable: "--font-ubuntu-mono",
+  weight: ["400"],
+  variable: "--font-logo",
+});
+
+const ibmPlexSans = IBM_Plex_Sans({
+  subsets: ["latin"],
+  weight: ["600"],
+  variable: "--font-nav",
 });
 
 export const metadata: Metadata = {
@@ -19,8 +25,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body className={`${ubuntuMono.variable} antialiased`}>
+    <html lang="ko">
+      <body className={`${cherryBombOne.variable} ${ibmPlexSans.variable}`}>
         <main>{children}</main>
       </body>
     </html>
