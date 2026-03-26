@@ -9,9 +9,9 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        text: {
-          primary: "var(--color-text-primary)",
-          muted: "var(--color-text-muted)",
+        dark: {
+          primary: "var(--color-primary)",
+          muted: "var(--color-muted)",
         },
         blue: {
           dark: "var(--color-blue-dark)",
