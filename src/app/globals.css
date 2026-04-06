@@ -13,11 +13,12 @@
   --color-blue-border: #d9e2f3;
   --color-primary: #111827;
   --color-muted: #4b5563;
+  --color-white-background: #ffffff;
 }
 
 body {
   color: var(--color-primary);
-  background: var(--color-blue-background);
+  background: var(--color-white-background);
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -42,8 +43,8 @@ body {
       var(--color-blue-primary) 47%,
       var(--color-blue-primary) 49%,
       var(--color-blue-primary) 50%,
-      var(--color-blue-background) 50%,
-      var(--color-blue-background) 100%
+      var(--color-white-background) 50%,
+      var(--color-white-background) 100%
     );
     background-size: 300% 100%;
     background-position: right;

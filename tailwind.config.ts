@@ -23,6 +23,9 @@ const config: Config = {
           surface: "var(--color-blue-surface)",
           border: "var(--color-blue-border)",
         },
+        white: {
+          background: "var(--color-white-background)",
+        },
       },
       fontFamily: {
         logo: ["var(--font-logo)", "sans-serif"],
