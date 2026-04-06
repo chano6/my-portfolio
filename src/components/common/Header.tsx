@@ -1,5 +1,6 @@
 "use client";
 
+import { NavItem } from "@/types/content";
 import Link from "next/link";
 import { useState } from "react";
 import MenuButton from "./MenuButton";
@@ -7,11 +8,11 @@ import MenuButton from "./MenuButton";
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  const navLinks = [
-    { name: "About", href: "#" },
-    { name: "Skills", href: "#" },
-    { name: "Projects", href: "#" },
-    { name: "Contact", href: "#" },
+  const navLinks: NavItem[] = [
+    { label: "About", href: "#about", sectionId: "about" },
+    { label: "Projects", href: "#projects", sectionId: "projects" },
+    { label: "Skills", href: "#skills", sectionId: "skills" },
+    { label: "Contact", href: "#contact", sectionId: "contact" },
   ];
 
   return (
@@ -29,12 +30,12 @@ export default function Header() {
       <nav className="hidden md:block">
         <ul className="flex gap-6 text-base md:flex-row md:gap-7 md:text-xl font-nav">
           {navLinks.map((link) => (
-            <li key={link.name}>
+            <li key={link.sectionId}>
               <Link
                 href={link.href}
                 className="text-dark-muted hover:text-blue-hover"
               >
-                {link.name}
+                {link.label}
               </Link>
             </li>
           ))}
@@ -51,13 +52,13 @@ export default function Header() {
       >
         <ul className="flex flex-col items-center gap-6 text-lg font-nav">
           {navLinks.map((link) => (
-            <li key={link.name}>
+            <li key={link.sectionId}>
               <Link
                 href={link.href}
                 className="text-dark-muted hover:text-blue-hover block w-full text-center"
                 onClick={() => setIsMenuOpen(false)}
               >
-                {link.name}
+                {link.label}
               </Link>
             </li>
           ))}
