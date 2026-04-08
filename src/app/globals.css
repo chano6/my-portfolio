@@ -116,6 +116,53 @@ body {
   }
 }
 
+.scroll-btn {
+  width: 30px;
+  height: 50px;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  border: none;
+  outline: 2px solid var(--color-blue-primary);
+  box-shadow: 0px 0px 10px var(--color-blue-primary);
+  position: relative;
+}
+
+.scroll-btn::after {
+  content: "scroll";
+  position: absolute;
+  top: 140%;
+  color: var(--color-muted);
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-size: 10px;
+  white-space: nowrap;
+}
+
+.scroll-dot {
+  width: 5px;
+  height: 10px;
+  border-radius: 10px;
+  background-color: var(--color-blue-primary);
+  box-shadow: 0px 0px 10px var(--color-blue-primary);
+  animation: scroll_dot 2s linear infinite;
+  transform: translateY(40%);
+}
+
+@keyframes scroll_dot {
+  0% {
+    transform: translateY(40%);
+  }
+  50% {
+    transform: translateY(90%);
+  }
+  100% {
+    transform: translateY(40%);
+  }
+}
+
 @media (max-width: 640px) {
   .intro-title {
     font-size: clamp(2rem, 12vw, 3.2rem);

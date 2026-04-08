@@ -38,13 +38,10 @@ export default function About() {
         </div>
       </div>
 
-      <div className="mt-8 flex flex-col items-center gap-2 text-blue-primary md:mt-10">
-        <span className="text-xs font-medium uppercase tracking-[0.22em]">
-          Scroll
-        </span>
-        <span className="flex h-8 w-5 justify-center rounded-full border border-blue-border bg-blue-surface">
-          <span className="mt-1.5 h-2 w-2 rounded-full bg-blue-primary" />
-        </span>
+      <div className="mt-14 flex flex-col items-center md:mt-16">
+        <div className="scroll-btn">
+          <div className="scroll-dot" />
+        </div>
       </div>
     </section>
   );
