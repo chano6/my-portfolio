@@ -44,7 +44,7 @@ export default function Header() {
 
       {/* --- 모바일용 내비게이션 --- */}
       <nav
-        className={`absolute top-full left-0 w-full bg-white-background shadow-md transition-all duration-300 ease-in-out md:hidden overflow-hidden ${
+        className={`absolute top-full left-0 w-full bg-blue-background shadow-md transition-all duration-300 ease-in-out md:hidden overflow-hidden ${
           isMenuOpen
             ? "max-h-[400px] py-4 opacity-100"
             : "max-h-0 py-0 opacity-0"
