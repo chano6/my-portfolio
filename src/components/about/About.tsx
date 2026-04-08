@@ -2,7 +2,7 @@ export default function About() {
   return (
     <section
       id="about"
-      className="flex flex-col justify-center px-8 pb-10 pt-12 md:h-screen md:px-16 md:pb-12 md:pt-16"
+      className="flex flex-col justify-center px-8 pb-10 pt-32 md:h-screen md:px-16 md:pb-12 md:pt-20"
       aria-labelledby="about-title"
     >
       <div className="mx-auto grid max-w-5xl gap-8 md:grid-cols-[280px_1fr] md:items-center md:gap-14">

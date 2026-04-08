@@ -1,11 +1,14 @@
 // src/types/content.ts
 
+import { LucideIcon } from "lucide-react";
+
 export type SectionId = "about" | "projects" | "skills" | "contact";
 
 export interface NavItem {
   label: string;
   href: `#${SectionId}`;
   sectionId: SectionId;
+  icon?: LucideIcon;
 }
 
 export interface ProfileSummary {
