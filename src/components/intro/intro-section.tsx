@@ -1,5 +1,6 @@
 "use client";
 
+import { INTRO_DURATION_MS } from "@/constants/ui";
 import { useEffect } from "react";
 
 interface IntroSectionProps {
@@ -7,7 +8,7 @@ interface IntroSectionProps {
   durationMs?: number;
 }
 
-function IntroSection({ onComplete, durationMs = 4000 }: IntroSectionProps) {
+function IntroSection({ onComplete, durationMs = INTRO_DURATION_MS }: IntroSectionProps) {
   useEffect(() => {
     const timer = setTimeout(() => {
       onComplete?.();
