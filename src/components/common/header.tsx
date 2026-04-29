@@ -5,16 +5,19 @@ import Link from "next/link";
 import { useState } from "react";
 import MenuButton from "./menu-button";
 
-interface HeaderProps {
-  navItems: NavItem[];
-}
+const navItems: NavItem[] = [
+  { label: "ABOUT", href: "#about", sectionId: "about" },
+  { label: "SKILLS", href: "#skills", sectionId: "skills" },
+  { label: "PROJECTS", href: "#projects", sectionId: "projects" },
+  { label: "CONTACT", href: "#contact", sectionId: "contact" },
+];
 
-function Header({ navItems }: HeaderProps) {
+function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
     <header className="relative w-full h-12 flex items-center bg-background border-b border-foreground justify-between px-2 md:px-4">
-      <Link href="/" className="text-xl font-grotesk text-foreground font-bold">
+      <Link href="/" className="text-xl text-foreground font-bold">
         CHAN<span className="text-primary">O</span>
       </Link>
 
@@ -30,7 +33,7 @@ function Header({ navItems }: HeaderProps) {
             <li key={link.sectionId}>
               <Link
                 href={link.href}
-                className="font-grotesk text-muted-foreground hover:text-foreground hover:font-bold transition-colors duration-200"
+                className="text-muted-foreground hover:text-foreground hover:font-bold transition-colors duration-200"
               >
                 {link.label}
               </Link>
@@ -54,7 +57,7 @@ function Header({ navItems }: HeaderProps) {
             <li key={link.sectionId}>
               <Link
                 href={link.href}
-                className="font-grotesk font-bold text-foreground text-base"
+                className="font-bold text-foreground text-base"
                 onClick={() => setIsMenuOpen(false)}
                 tabIndex={isMenuOpen ? 0 : -1}
               >
