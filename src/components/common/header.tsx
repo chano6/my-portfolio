@@ -55,7 +55,7 @@ function Header() {
       </header>
 
       {isMenuOpen && (
-        <div className="fixed inset-x-0 top-14 bottom-0 z-49 animate-[fadeIn_160ms_ease-out] overflow-y-auto bg-bg md:hidden">
+        <div className="fixed inset-x-0 top-13 bottom-0 z-49 animate-[fadeIn_160ms_ease-out] overflow-y-auto bg-bg md:hidden">
           <div className="mx-auto flex max-w-150 flex-col gap-1 px-6 pt-6 pb-8">
             <span className="mb-3 text-[11px] text-fg-muted tracking-wider">
               {"// menu"}
