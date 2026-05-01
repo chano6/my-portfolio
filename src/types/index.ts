@@ -1,9 +1,9 @@
-export type SectionId = "about" | "projects" | "skills" | "contact";
+export type Section = "about" | "projects" | "skills" | "contact";
 
 export interface NavItem {
-  label: string;
-  href: `#${SectionId}`;
-  sectionId: SectionId;
+  id: string;
+  n: string;
+  label: Section;
 }
 
 export interface PortfolioContent {

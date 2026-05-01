@@ -1,6 +1,6 @@
-import Header from "@/components/common/header";
 import type { Metadata } from "next";
 import { JetBrains_Mono } from "next/font/google";
+import Header from "@/components/common/header";
 import "./globals.css";
 
 const jetbrainsMono = JetBrains_Mono({
@@ -21,9 +21,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ko" className={`${jetbrainsMono.variable} h-full antialiased`}>
-      <body className="min-h-full flex flex-col">
+      <body>
         <Header />
-        <main className="relative w-full h-full p-4 md:px-5">{children}</main>
+        <main className="relative h-full w-full p-4 md:px-5">{children}</main>
       </body>
     </html>
   );
