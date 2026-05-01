@@ -23,7 +23,7 @@ export default function RootLayout({
     <html lang="ko" className={`${jetbrainsMono.variable} h-full antialiased`}>
       <body>
         <Header />
-        <main className="relative h-full w-full p-4 md:px-5">{children}</main>
+        {children}
       </body>
     </html>
   );
