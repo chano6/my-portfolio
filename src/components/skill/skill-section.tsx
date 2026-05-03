@@ -7,7 +7,7 @@ interface SkillSectionProps {
 
 function SkillSection({ skills }: SkillSectionProps) {
   return (
-    <SectionLayout id="skill" title="02 — skills">
+    <SectionLayout id="skills" title="02 — skills">
       <h3 className="m-0 mb-8 font-semibold text-[22px] leading-[1.2] tracking-tight md:text-[28px]">
         도구와 언어
       </h3>
