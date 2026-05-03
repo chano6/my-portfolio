@@ -15,6 +15,20 @@ const links = [
 function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
+  const handleNav = (e: React.MouseEvent<HTMLAnchorElement>, id: string) => {
+    e.preventDefault();
+    setIsMenuOpen(false);
+    const el = document.getElementById(id);
+    if (!el) return;
+
+    const headerH =
+      document.querySelector("header")?.getBoundingClientRect().height ?? 0;
+    window.scrollTo({
+      top: el.getBoundingClientRect().top + window.scrollY - headerH,
+      behavior: "smooth",
+    });
+  };
+
   useEffect(() => {
     document.body.style.overflow = isMenuOpen ? "hidden" : "";
     return () => {
@@ -29,6 +43,7 @@ function Header() {
           <Link
             href="#top"
             className="inline-flex items-center gap-2.5 font-semibold text-[13px] tracking-tight"
+            onClick={(e) => handleNav(e, "top")}
           >
             <span className="h-2 w-2 rounded-full bg-accent shadow-[0_0_0_3px_color-mix(in_oklab,var(--accent)_25%,transparent)]" />
             <span>~/portfolio</span>
@@ -65,7 +80,7 @@ function Header() {
                 key={link.id}
                 href={`#${link.id}`}
                 className="flex items-center gap-3 border-line border-b px-1 py-3.5 font-medium text-fg text-lg tracking-tight"
-                onClick={() => setIsMenuOpen(false)}
+                onClick={(e) => handleNav(e, link.id)}
                 tabIndex={isMenuOpen ? 0 : -1}
               >
                 <span className="font-normal text-[12px] text-accent">
