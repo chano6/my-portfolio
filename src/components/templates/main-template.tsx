@@ -1,5 +1,6 @@
 "use client";
 
+import AboutSection from "../about/about-section";
 import Gutter from "../common/gutter";
 import HeroSection from "../hero/hero-section";
 
@@ -9,6 +10,7 @@ function MainTemplate() {
       <Gutter count={120} />
       <main className="min-w-0 px-4 md:px-6">
         <HeroSection />
+        <AboutSection />
       </main>
     </div>
   );
