@@ -37,7 +37,7 @@ function HeroSection() {
             strokeWidth={2.25}
           />
         </Button>
-        <Button className="inline-flex h-auto flex-1 cursor-pointer items-center gap-2 rounded-(--radius) border border-line-strong bg-bg px-3.5 py-3 font-medium text-fg text-xs tracking-wide transition-all duration-(--t-fast) hover:border-accent hover:brightness-95 md:flex-none md:px-4 md:py-2.75">
+        <Button className="inline-flex h-auto flex-1 cursor-pointer items-center gap-2 rounded-(--radius) border border-line-strong bg-bg px-3.5 py-3 font-medium text-fg text-xs tracking-wide transition-all duration-(--t-fast) hover:border-fg hover:brightness-95 md:flex-none md:px-4 md:py-2.75">
           연락하기
         </Button>
       </div>

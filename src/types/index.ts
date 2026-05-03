@@ -1,4 +1,4 @@
-export type Section = "about" | "projects" | "skills" | "contact";
+type Section = "about" | "projects" | "skills" | "contact";
 
 export interface NavItem {
   id: string;
@@ -6,6 +6,11 @@ export interface NavItem {
   label: Section;
 }
 
-export interface PortfolioContent {
-  navItems: NavItem[];
+export interface Skill {
+  cat: string;
+  items: string[];
+}
+
+export interface PortfolioData {
+  SKILLS: Skill[];
 }
