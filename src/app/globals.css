@@ -69,6 +69,8 @@
 
 @keyframes fadeIn { from { opacity: 0; } }
 
+@keyframes blink { 50% { opacity: 0; } }
+
 @layer base {
   * {
     @apply border-line;
