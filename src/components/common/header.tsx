@@ -27,6 +27,7 @@ function Header() {
       top: el.getBoundingClientRect().top + window.scrollY - headerH,
       behavior: "smooth",
     });
+    history.replaceState(null, "", location.pathname);
   };
 
   useEffect(() => {
