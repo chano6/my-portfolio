@@ -38,8 +38,9 @@
   --maxw: 860px;
   --radius: 4px;
 
-  --t-fast: 120ms cubic-bezier(0.2, 0.7, 0.3, 1);
-  --t-med: 240ms cubic-bezier(0.2, 0.7, 0.3, 1);
+  --t-ease: cubic-bezier(0.2, 0.7, 0.3, 1);
+  --t-fast: 120ms;
+  --t-med: 240ms;
 }
 
 [data-theme="dark"] {
@@ -74,6 +75,7 @@
 @layer base {
   * {
     @apply border-line;
+    transition-timing-function: var(--t-ease);
   }
   html {
     scroll-behavior: smooth;
