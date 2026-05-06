@@ -68,9 +68,28 @@
   transition: transform var(--t-fast), opacity var(--t-fast);
 }
 
-@keyframes fadeIn { from { opacity: 0; } }
+@keyframes fadeIn { 
+  from { 
+    opacity: 0; 
+  } 
+}
 
-@keyframes blink { 50% { opacity: 0; } }
+@keyframes blink { 
+  50% { 
+    opacity: 0; 
+  } 
+}
+
+@keyframes ping {
+  0% { 
+    transform: scale(0.7); 
+    opacity: 1; 
+  }
+  100% { 
+    transform: scale(2.2); 
+    opacity: 0; 
+  }
+}
 
 @layer base {
   * {

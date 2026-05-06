@@ -89,7 +89,8 @@ function Header() {
                 </span>
                 <span>{link.label}</span>
                 <ArrowRight
-                  className="ml-auto size-3 text-fg-muted transition-transform duration-(--t-fast)"
+                  className="ml-auto text-fg-muted transition-transform duration-(--t-fast)"
+                  size={12}
                   strokeWidth={2}
                 />
               </Link>

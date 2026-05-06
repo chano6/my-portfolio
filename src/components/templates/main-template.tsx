@@ -3,6 +3,7 @@
 import { PORTFOLIO_DATA } from "@/data/portfolio";
 import AboutSection from "../about/about-section";
 import Gutter from "../common/gutter";
+import ContactSection from "../contact/contact-section";
 import HeroSection from "../hero/hero-section";
 import ProjectSection from "../project/project-section";
 import SkillSection from "../skill/skill-section";
@@ -18,6 +19,7 @@ function MainTemplate() {
         <AboutSection />
         <SkillSection skills={SKILLS} />
         <ProjectSection projects={PROJECTS} />
+        <ContactSection />
       </main>
     </div>
   );

@@ -27,7 +27,8 @@ function ProjectSection({ projects, onOpen, onSeeAll }: ProjectSectionProps) {
           >
             <span>더보기</span>
             <ArrowRight
-              className="size-3 transition-transform duration-(--t-fast) group-hover:translate-x-0.75"
+              className="transition-transform duration-(--t-fast) group-hover:translate-x-0.75"
+              size={12}
               strokeWidth={2.25}
             />
           </button>

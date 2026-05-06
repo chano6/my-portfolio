@@ -28,7 +28,8 @@ function ProjectCard({ project, onOpen }: ProjectCardProps) {
         <h4 className="m-0 mb-2 flex items-start justify-between gap-2.5 font-semibold text-[15px] leading-[1.35] tracking-tight transition-colors duration-(--t-fast) md:text-base">
           <span className="group-hover:text-accent">{project.title}</span>
           <ArrowUpRight
-            className="mt-0.5 size-3 shrink-0 text-fg-muted opacity-50 transition-all duration-(--t-fast) group-hover:translate-x-0.5 group-hover:-translate-y-0.5 group-hover:opacity-100"
+            className="mt-0.5 shrink-0 text-fg-muted opacity-50 transition-all duration-(--t-fast) group-hover:translate-x-0.5 group-hover:-translate-y-0.5 group-hover:opacity-100"
+            size={12}
             strokeWidth={2.25}
           />
         </h4>
