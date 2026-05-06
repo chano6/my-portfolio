@@ -5,7 +5,7 @@ import SectionLayout from "../common/section-layout";
 
 function ContactSection() {
   return (
-    <SectionLayout id="skills" title="04 — contact">
+    <SectionLayout id="contact" title="04 — contact">
       <h3 className="m-0 mb-8 font-semibold text-[22px] leading-[1.2] tracking-tight md:text-[28px]">
         함께 일해요
       </h3>
