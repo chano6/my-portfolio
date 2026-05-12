@@ -22,7 +22,7 @@ function SkillSection({ skills }: SkillSectionProps) {
               {items.map((item) => (
                 <span
                   key={item}
-                  className="inline-flex cursor-default items-center rounded-(--radius) border border-line bg-bg-elev px-2.25 py-1 text-[11px] text-fg-dim transition-all duration-(--t-fast) hover:border-accent hover:text-fg"
+                  className="inline-flex cursor-default items-center rounded-lg border border-line bg-bg-elev px-2.25 py-1 text-[11px] text-fg-dim transition-all duration-(--t-fast) hover:border-accent hover:text-fg"
                 >
                   {item}
                 </span>

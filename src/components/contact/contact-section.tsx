@@ -10,7 +10,7 @@ function ContactSection() {
         함께 일해요
       </h3>
 
-      <div className="order rounded-(--radius) border-line bg-bg-elev px-4.5 py-5.5 pb-6.5 md:px-7 md:pt-7">
+      <div className="rounded-lg border border-line bg-bg-elev px-4.5 py-5.5 pb-6.5 md:px-7 md:pt-7">
         <div className="mb-3.5 inline-flex items-center gap-2 rounded-full border border-line bg-bg px-2.5 py-1.25 text-[11px] text-fg-dim">
           <div className="relative inline-flex h-1.75 w-1.75 shrink-0">
             <span className="absolute -inset-0.75 animate-[ping_1.8s_ease-out_infinite] rounded-full bg-green-400/35" />
@@ -30,7 +30,7 @@ function ContactSection() {
 
         <div className="flex flex-wrap gap-2">
           <Link
-            className="inline-flex items-center gap-2 rounded-(--radius) border border-line bg-bg px-2.5 py-2 text-[11.5px] text-fg-dim transition-all duration-(--t-fast) hover:-translate-y-px hover:border-fg hover:text-fg md:px-3 md:py-2.25 md:text-xs"
+            className="inline-flex items-center gap-2 rounded-lg border border-line bg-bg px-2.5 py-2 text-[11.5px] text-fg-dim transition-all duration-(--t-fast) hover:-translate-y-px hover:border-fg hover:text-fg md:px-3 md:py-2.25 md:text-xs"
             href="mailto:hello@example.com"
           >
             <Mail size={13} strokeWidth={1.4} />
@@ -39,7 +39,7 @@ function ContactSection() {
             </span>
           </Link>
           <Link
-            className="inline-flex items-center gap-2 rounded-(--radius) border border-line bg-bg px-2.5 py-2 text-[11.5px] text-fg-dim transition-all duration-(--t-fast) hover:-translate-y-px hover:border-fg hover:text-fg md:px-3 md:py-2.25 md:text-xs"
+            className="inline-flex items-center gap-2 rounded-lg border border-line bg-bg px-2.5 py-2 text-[11.5px] text-fg-dim transition-all duration-(--t-fast) hover:-translate-y-px hover:border-fg hover:text-fg md:px-3 md:py-2.25 md:text-xs"
             href="mailto:hello@example.com"
           >
             <GithubIcon size={13} strokeWidth={1.4} />

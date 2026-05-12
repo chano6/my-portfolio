@@ -1,22 +1,25 @@
 import { ArrowUpRight } from "lucide-react";
 import { Project } from "@/types";
 
+const dotColors = {
+  personal: "bg-[#e89478]",
+  company: "bg-[#5a9fd4]",
+  team: "bg-[#7ab87a]",
+};
+
 interface ProjectCardProps {
   project: Project;
   onOpen?: (projectId: string) => void;
 }
 
 function ProjectCard({ project, onOpen }: ProjectCardProps) {
-  const dotColors = {
-    personal: "bg-[#e89478]",
-    company: "bg-[#5a9fd4]",
-    team: "bg-[#7ab87a]",
-  };
-
-  const dotColor = dotColors[project.category] || "bg-[var(--fg-muted)]";
+  const dotColor = dotColors[project.category];
 
   return (
-    <div className="group flex w-full cursor-pointer flex-col overflow-hidden rounded-lg border border-line bg-bg-elev text-left transition-all duration-(--t-fast) hover:-translate-y-0.5 hover:border-line-strong hover:shadow-[0_8px_24px_-16px_rgba(0,0,0,0.18)]">
+    <div
+      className="group flex w-full cursor-pointer flex-col overflow-hidden rounded-lg border border-line bg-bg-elev text-left transition-all duration-(--t-fast) hover:-translate-y-0.5 hover:border-line-strong hover:shadow-[0_8px_24px_-16px_rgba(0,0,0,0.18)]"
+      onClick={() => onOpen?.(project.id)}
+    >
       <div className="relative h-24 overflow-hidden border-line border-b md:h-30"></div>
       <div className="flex flex-1 flex-col px-3.5 pt-3.5 pb-4 md:px-4.5 md:pt-4 md:pb-4.5">
         <div className="mb-2 flex items-center gap-2 text-[10.5px] text-fg-muted md:text-[11px]">

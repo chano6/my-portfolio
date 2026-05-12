@@ -24,7 +24,7 @@ export interface Project {
   summary: string;
   highlights: string[];
   role_desc: string;
-  links: { live: string; code: string };
+  links: { live: string; repo: string };
   swatch: string;
 }
 

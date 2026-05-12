@@ -21,7 +21,7 @@ const PROJECTS: Project[] = [
     ],
     role_desc:
       "에디터 코어, 멀티플레이어 동기화 레이어, 디자인 시스템을 처음부터 설계하고 구현했습니다.",
-    links: { live: "#", code: "#" },
+    links: { live: "#", repo: "#" },
     swatch: "oklch(0.78 0.14 70)",
   },
   {
@@ -44,7 +44,7 @@ const PROJECTS: Project[] = [
     ],
     role_desc:
       "PR 디테일 페이지와 명령 팔레트, 디자인 토큰 시스템을 담당했습니다.",
-    links: { live: "#", code: "#" },
+    links: { live: "#", repo: "#" },
     swatch: "oklch(0.7 0.15 240)",
   },
   {
@@ -67,7 +67,7 @@ const PROJECTS: Project[] = [
     ],
     role_desc:
       "디자인부터 인프라까지 혼자 진행. 임베딩 파이프라인과 프론트엔드 모두 담당.",
-    links: { live: "#", code: "#" },
+    links: { live: "#", repo: "#" },
     swatch: "oklch(0.72 0.14 320)",
   },
   {
@@ -90,7 +90,7 @@ const PROJECTS: Project[] = [
     ],
     role_desc:
       "오프라인 데이터 레이어와 시각화 컴포넌트, BLE 통합 작업을 담당했습니다.",
-    links: { live: "#", code: "#" },
+    links: { live: "#", repo: "#" },
     swatch: "oklch(0.74 0.14 145)",
   },
   {
@@ -112,7 +112,7 @@ const PROJECTS: Project[] = [
       "오픈소스 — GitHub 1.2k stars",
     ],
     role_desc: "디자인, 개발, 배포 전부 단독 진행. 6주짜리 사이드 프로젝트.",
-    links: { live: "#", code: "#" },
+    links: { live: "#", repo: "#" },
     swatch: "oklch(0.74 0.14 30)",
   },
   {
@@ -133,7 +133,7 @@ const PROJECTS: Project[] = [
       "온보딩 시간 평균 22분 → 4분 단축",
     ],
     role_desc: "쿼리 빌더와 차트 시각화 모듈 담당.",
-    links: { live: "#", code: "#" },
+    links: { live: "#", repo: "#" },
     swatch: "oklch(0.72 0.13 200)",
   },
   {
@@ -153,7 +153,7 @@ const PROJECTS: Project[] = [
       "이미지 자동 최적화 파이프라인",
     ],
     role_desc: "전부 혼자.",
-    links: { live: "#", code: "#" },
+    links: { live: "#", repo: "#" },
     swatch: "oklch(0.74 0.14 100)",
   },
   {
@@ -170,7 +170,7 @@ const PROJECTS: Project[] = [
       "관심사 기반으로 스터디 그룹을 매칭해주는 학생용 앱. 4인 팀에서 프론트엔드 리딩.",
     highlights: ["실시간 매칭 알고리즘 시각화", "교내 사용자 1,200명 도달"],
     role_desc: "프론트엔드 아키텍처 + 매칭 UI.",
-    links: { live: "#", code: "#" },
+    links: { live: "#", repo: "#" },
     swatch: "oklch(0.72 0.13 280)",
   },
 ];
