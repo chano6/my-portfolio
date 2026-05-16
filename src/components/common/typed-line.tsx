@@ -8,7 +8,7 @@ interface TypedLineProps {
   className?: string;
 }
 
-function TypedLine({ text, delay = 0, className }: TypedLineProps) {
+export function TypedLine({ text, delay = 0, className }: TypedLineProps) {
   const [shown, setShown] = useState("");
 
   useEffect(() => {
@@ -28,5 +28,3 @@ function TypedLine({ text, delay = 0, className }: TypedLineProps) {
     </span>
   );
 }
-
-export default TypedLine;

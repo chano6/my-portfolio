@@ -1,8 +1,8 @@
 import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import TypedLine from "../common/typed-line";
+import { TypedLine } from "../common/typed-line";
 
-function HeroSection() {
+export function HeroSection() {
   return (
     <section id="top" className="pt-12 pb-8 md:pt-24 md:pb-16">
       <div className="mb-4.5 inline-flex items-center gap-2 text-[13px] text-accent">
@@ -44,5 +44,3 @@ function HeroSection() {
     </section>
   );
 }
-
-export default HeroSection;

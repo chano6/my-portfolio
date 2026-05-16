@@ -1,11 +1,11 @@
 import { Skill } from "@/types";
-import SectionLayout from "../common/section-layout";
+import { SectionLayout } from "../common/section-layout";
 
 interface SkillSectionProps {
   skills: Skill[];
 }
 
-function SkillSection({ skills }: SkillSectionProps) {
+export function SkillSection({ skills }: SkillSectionProps) {
   return (
     <SectionLayout id="skills" title="02 — skills">
       <h3 className="m-0 mb-8 font-semibold text-[22px] leading-[1.2] tracking-tight md:text-[28px]">
@@ -34,5 +34,3 @@ function SkillSection({ skills }: SkillSectionProps) {
     </SectionLayout>
   );
 }
-
-export default SkillSection;

@@ -2,7 +2,7 @@ interface GutterProps {
   count: number;
 }
 
-function Gutter({ count }: GutterProps) {
+export function Gutter({ count }: GutterProps) {
   const lines = Array.from({ length: count }, (_, i) => i + 1);
 
   return (
@@ -18,5 +18,3 @@ function Gutter({ count }: GutterProps) {
     </div>
   );
 }
-
-export default Gutter;

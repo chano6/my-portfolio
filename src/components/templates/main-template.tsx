@@ -2,16 +2,16 @@
 
 import { useState } from "react";
 import { PORTFOLIO_DATA } from "@/data/portfolio";
-import AboutSection from "../about/about-section";
-import Footer from "../common/footer";
-import PageLayout from "../common/page-layout";
-import ContactSection from "../contact/contact-section";
-import HeroSection from "../hero/hero-section";
-import ProjectModal from "../project/project-modal";
-import ProjectSection from "../project/project-section";
-import SkillSection from "../skill/skill-section";
+import { AboutSection } from "../about/about-section";
+import { Footer } from "../common/footer";
+import { PageLayout } from "../common/page-layout";
+import { ContactSection } from "../contact/contact-section";
+import { HeroSection } from "../hero/hero-section";
+import { ProjectModal } from "../project/project-modal";
+import { ProjectSection } from "../project/project-section";
+import { SkillSection } from "../skill/skill-section";
 
-function MainTemplate() {
+export function MainTemplate() {
   const { SKILLS, PROJECTS } = PORTFOLIO_DATA;
   const [selectedId, setSelectedId] = useState<string | null>(null);
   const selectedProject = PROJECTS.find((p) => p.id === selectedId) ?? null;
@@ -35,5 +35,3 @@ function MainTemplate() {
     </>
   );
 }
-
-export default MainTemplate;

@@ -1,7 +1,7 @@
-import ProjectTemplate from "@/components/templates/projects-template";
+import { ProjectsTemplate } from "@/components/templates/projects-template";
 
 function ProjectsPage() {
-  return <ProjectTemplate />;
+  return <ProjectsTemplate />;
 }
 
 export default ProjectsPage;

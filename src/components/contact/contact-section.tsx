@@ -1,9 +1,9 @@
 import { Mail } from "lucide-react";
 import Link from "next/link";
 import { GithubIcon } from "@/components/icons";
-import SectionLayout from "../common/section-layout";
+import { SectionLayout } from "../common/section-layout";
 
-function ContactSection() {
+export function ContactSection() {
   return (
     <SectionLayout id="contact" title="04 — contact">
       <h3 className="m-0 mb-8 font-semibold text-[22px] leading-[1.2] tracking-tight md:text-[28px]">
@@ -52,5 +52,3 @@ function ContactSection() {
     </SectionLayout>
   );
 }
-
-export default ContactSection;

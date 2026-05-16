@@ -1,10 +1,10 @@
-import Gutter from "./gutter";
+import { Gutter } from "./gutter";
 
 interface PageLayoutProps {
   children: React.ReactNode;
 }
 
-function PageLayout({ children }: PageLayoutProps) {
+export function PageLayout({ children }: PageLayoutProps) {
   return (
     <div className="mx-auto grid max-w-[calc(var(--maxw)+var(--gutter-w)+32px)] grid-cols-[var(--gutter-w)_1fr] gap-x-0 px-4">
       <Gutter count={200} />
@@ -12,5 +12,3 @@ function PageLayout({ children }: PageLayoutProps) {
     </div>
   );
 }
-
-export default PageLayout;

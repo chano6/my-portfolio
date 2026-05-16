@@ -15,7 +15,7 @@ const dotColors = {
   team: "bg-[#7ab87a]",
 };
 
-function ProjectModal({ project, onClose }: ProjectModalProps) {
+export function ProjectModal({ project, onClose }: ProjectModalProps) {
   const dotColor = dotColors[project.category];
 
   return (
@@ -140,5 +140,3 @@ function ProjectModal({ project, onClose }: ProjectModalProps) {
     </Dialog.Root>
   );
 }
-
-export default ProjectModal;

@@ -3,11 +3,11 @@ interface MenuButtonProps {
   onClick?: () => void;
 }
 
-function MenuButton({ isOpen, onClick }: MenuButtonProps) {
+export function MenuButton({ isOpen, onClick }: MenuButtonProps) {
   return (
     <button
       type="button"
-      className="relative flex h-8 w-8 items-center justify-center rounded-(--radius) border border-line md:hidden"
+      className="relative flex h-8 w-8 items-center justify-center rounded-lg border border-line md:hidden"
       onClick={onClick}
       aria-label={isOpen ? "메뉴 닫기" : "메뉴 열기"}
       aria-expanded={isOpen ?? false}
@@ -23,5 +23,3 @@ function MenuButton({ isOpen, onClick }: MenuButtonProps) {
     </button>
   );
 }
-
-export default MenuButton;

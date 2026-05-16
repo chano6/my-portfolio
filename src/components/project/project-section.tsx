@@ -1,7 +1,7 @@
 import { ArrowRight } from "lucide-react";
 import { Project } from "@/types";
-import SectionLayout from "../common/section-layout";
-import ProjectCard from "./project-card";
+import { SectionLayout } from "../common/section-layout";
+import { ProjectCard } from "./project-card";
 
 interface ProjectSectionProps {
   projects: Project[];
@@ -9,7 +9,11 @@ interface ProjectSectionProps {
   onSeeAll?: () => void;
 }
 
-function ProjectSection({ projects, onOpen, onSeeAll }: ProjectSectionProps) {
+export function ProjectSection({
+  projects,
+  onOpen,
+  onSeeAll,
+}: ProjectSectionProps) {
   const featured = projects.slice(0, 4);
 
   return (
@@ -43,5 +47,3 @@ function ProjectSection({ projects, onOpen, onSeeAll }: ProjectSectionProps) {
     </SectionLayout>
   );
 }
-
-export default ProjectSection;

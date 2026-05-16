@@ -12,7 +12,7 @@ interface ProjectCardProps {
   onOpen?: (projectId: string) => void;
 }
 
-function ProjectCard({ project, onOpen }: ProjectCardProps) {
+export function ProjectCard({ project, onOpen }: ProjectCardProps) {
   const dotColor = dotColors[project.category];
 
   return (
@@ -51,5 +51,3 @@ function ProjectCard({ project, onOpen }: ProjectCardProps) {
     </div>
   );
 }
-
-export default ProjectCard;

@@ -1,13 +1,13 @@
-import SectionLayout from "../common/section-layout";
+import { SectionLayout } from "../common/section-layout";
 
-function AboutSection() {
+export function AboutSection() {
   return (
     <SectionLayout id="about" title="01 — about">
       <h3 className="m-0 mb-8 font-semibold text-[22px] leading-[1.2] tracking-tight md:text-[28px]">
         code 너머의 이야기
       </h3>
 
-      <div className="mb-6 overflow-hidden rounded-(--radius) border border-line bg-bg-elev text-[13px]">
+      <div className="mb-6 overflow-hidden rounded-lg border border-line bg-bg-elev text-[13px]">
         <div className="flex items-center gap-2 border-line border-b bg-bg-sunken px-3.5 py-2.25 text-[11px] text-fg-muted">
           <span className="mr-1.5 inline-flex gap-1.5">
             <span className="h-2.25 w-2.25 rounded-full bg-line-strong" />
@@ -46,5 +46,3 @@ function AboutSection() {
     </SectionLayout>
   );
 }
-
-export default AboutSection;

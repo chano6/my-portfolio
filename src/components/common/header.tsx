@@ -3,7 +3,7 @@
 import { ArrowRight } from "lucide-react";
 import Link from "next/link";
 import { useEffect, useState } from "react";
-import MenuButton from "./menu-button";
+import { MenuButton } from "./menu-button";
 
 const links = [
   { id: "about", n: "01", label: "about" },
@@ -12,7 +12,7 @@ const links = [
   { id: "contact", n: "04", label: "contact" },
 ];
 
-function Header() {
+export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const handleNav = (e: React.MouseEvent<HTMLAnchorElement>, id: string) => {
@@ -101,5 +101,3 @@ function Header() {
     </>
   );
 }
-
-export default Header;
